@@ -1,0 +1,69 @@
+<swiper indicator-dots="{{true}}" autoplay="{{true}}" indicator-active-color="#ff6699">
+   <block a:for='{{carousels}}'>
+      <swiper-item>
+        <image src="{{item.imageUrl}}" class="swiper-img"/>
+      </swiper-item>
+    </block>
+</swiper>
+
+<view class="feature">
+  <view >
+    <image  class="feature-ico" src="/resources/icon/smallIco/fang.png" />
+    全场包邮
+  </view>
+  <view >
+    <image class="feature-ico" src="/resources/icon/smallIco/flash.png" />
+    先行赔付
+  </view>
+  <view>
+    <image class="feature-ico" src="/resources/icon/smallIco/yuan.png" />
+    7天无理由
+  </view>
+  <view>
+    <image class="feature-ico" src="/resources/icon/smallIco/ling.png" />
+    优先退款
+  </view>
+</view>
+<!-- 推荐商品 -->
+<view class="list-title">
+  <view class="title-tag">
+    <image  src="/resources/icon/smallIco/rec.png" class="comm-image" />
+    推荐商品
+  </view>
+</view>
+<!-- 推荐商品列表 -->
+<scroll-view class="scroll-items" scroll-x="{{true}}">
+    <image src="/resources/items/1001.png" class="items-cover"/>
+    <image src="/resources/items/1002.png" class="items-cover"/>
+    <image src="/resources/items/1001.png" class="items-cover"/>
+    <image src="/resources/items/1002.png" class="items-cover"/>
+    <image src="/resources/items/1001.png" class="items-cover"/>
+    <image src="/resources/items/1002.png" class="items-cover"/>
+</scroll-view>
+
+<view class="list-title">
+  <view class="title-tag">
+    <image  src="/resources/icon/smallIco/diamond.png" class="comm-image" />
+    商品上新
+  </view>
+</view>
+
+<view class="new-list">
+  <view class="item-outter">
+    <image  src="/resources/items/1002.png" />
+    <view class="item-border">
+      <view class="tags">衣服</view>
+      <view class="tags">裤子</view>
+      <view class="tags">奢侈品</view>
+    
+    </view>
+
+    <view class="price-border">
+      <view class="price">￥100.00</view>
+      <view class="like-counts">
+        888 
+        <image src="/resources/icon/smallIco/likes.png" class="like-ico"/>
+      </view>
+    </view>
+  </view>
+</view>
