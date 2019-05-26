@@ -33,12 +33,9 @@
 </view>
 <!-- 推荐商品列表 -->
 <scroll-view class="scroll-items" scroll-x="{{true}}">
-    <image src="/resources/items/1001.png" class="items-cover"/>
-    <image src="/resources/items/1002.png" class="items-cover"/>
-    <image src="/resources/items/1001.png" class="items-cover"/>
-    <image src="/resources/items/1002.png" class="items-cover"/>
-    <image src="/resources/items/1001.png" class="items-cover"/>
-    <image src="/resources/items/1002.png" class="items-cover"/>
+  <block a:for="{{recList}}">
+    <image src="{{item.cover}}" class="items-cover"/>
+  </block>
 </scroll-view>
 
 <view class="list-title">
@@ -49,21 +46,22 @@
 </view>
 
 <view class="new-list">
-  <view class="item-outter">
-    <image  src="/resources/items/1002.png" />
-    <view class="item-border">
-      <view class="tags">衣服</view>
-      <view class="tags">裤子</view>
-      <view class="tags">奢侈品</view>
-    
-    </view>
+  <block a:for="{{newItemList}}">
+    <view class="item-outter">
+      <image  src="{{item.cover}}" />
+      <view class="item-border">
+        <block a:for="{{item.tagList}}" a:for-item="tags">
+          <view class="tags">{{tags}}</view>
+        </block>
+      </view>
 
-    <view class="price-border">
-      <view class="price">￥100.00</view>
-      <view class="like-counts">
-        888 
-        <image src="/resources/icon/smallIco/likes.png" class="like-ico"/>
+      <view class="price-border">
+        <view class="price">￥{{item.priceDiscountYuan}}</view>
+        <view class="like-counts">
+          {{item.likeCounts}}
+          <image src="/resources/icon/smallIco/likes.png" class="like-ico"/>
+        </view>
       </view>
     </view>
-  </view>
+  </block>
 </view>
