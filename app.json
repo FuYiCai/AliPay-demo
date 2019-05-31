@@ -1,14 +1,19 @@
 {
   "pages": [
-    "pages/query/category/category",
     "pages/index/index",
-    "pages/shoppingCart/cat/cat",
     "pages/mine/info/info",
-    "pages/query/list/list/list",
+    "pages/orders/addressInfo/addressInfo",
+    "pages/orders/addressList/addressList",
+    "pages/orders/confrimOrder/confrimOrder",
+    "pages/orders/payment/payment",
+    "pages/query/category/category",
+    "pages/query/item/item",
+    "pages/query/list/list",
+    "pages/shoppingCart/cart/cart",
     "pages/template/itemList/itemList"
   ],
   "window": {
-    "defaultTitle": "Go Shopping",
+    "defaultTitle": "go-shopping",
     "titleBarColor": "#ffbfc7"
   },
   "tabBar": {
@@ -29,7 +34,7 @@
         "activeIcon": "resources/icon/tabBar/category-sel.png"
       },
       {
-        "pagePath": "pages/shoppingCart/cat/cat",
+        "pagePath": "pages/shoppingCart/cart/cart",
         "name": "购物车",
         "icon": "resources/icon/tabBar/shopping-car.png",
         "activeIcon": "resources/icon/tabBar/shopping-car-sel.png"

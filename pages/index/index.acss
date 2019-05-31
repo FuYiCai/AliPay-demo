@@ -1,117 +1,139 @@
-page{
-  display: flex;
-  flex-direction: column;
-  background-color: #f2f5f8;
-}
-.swiper-img{
-  width: 750rpx;
-  height: 400rpx;
+page {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f5f8;
 }
 
-.feature{
-  display: flex;
-  justify-content: space-around;
-  font-size: 12px;
-  background-color: #fff;
-  color: gray;
-  line-height: 35px;
-}
-.feature-ico{
-  width: 15rpx;
-  height: 15rpx;
-  margin-right: 6rpx;
+.swiper-item-img {
+    width: 750rpx;
+    height: 400rpx;
 }
 
-.list-title{
-  font-size: 12px;
-  background-color: #fff;
-  color: gray;
-  line-height: 35px;
-  margin-top: 5px;
+/* 商城特色 start */
+.feature-ico {
+    width: 14rpx;
+    height: 14rpx;
+    margin-right: 6rpx;
 }
-.title-tag{
-  margin-left: 15px;
+.feature {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 12px;
+    background-color: white;
+    color: gray;
+    line-height: 35px;
 }
-.comm-image{
-  width: 20rpx;
-  height: 20rpx;
-  margin-right: 6rpx;
-}
-.scroll-items{
-  display: flex;
-  flex-wrap: nowrap;
-  width: 100%;
-  background-color: #fff;
-}
-.items-cover{
-  flex-shrink: 0;
-  width: 170rpx;
-  height: 250rpx;
-  margin-left: 15rpx;
-  border-radius: 3px;
-}
+/* 商城特色 end */
 
-.new-list{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  background-color: #fff;
+/* 横向推荐商品 start */
+.title-items-list {
+    background-color: white;
+    margin-top: 5px;
+    line-height: 35px;
+    font-size: 12px;
+    color: gray;
 }
-.item-outter{
-  width: 350rpx;
-  margin-bottom: 10rpx;
-  padding: 6rpx 10rpx;
+.title-tag {
+    margin-left: 15px;
 }
-.item-outter image{
-  width: 350rpx;
-  height: 510rpx;
-  margin-right: 10rpx;
+.title-ico {
+    width: 20rpx;
+    height: 20rpx;
+    margin-right: 6rpx;
 }
-.item-border{
-  height: 100rpx;
-  border-left: solid 1px;
-  border-right: solid 1px;
-  border-color: #f2f5f8;
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+.scroll-rec-items {
+    width: 100%;
+    white-space: nowrap;
+    background-color: white;
 }
-.item-border .tags{
-  margin-left: 10rpx;
-  margin-top: 10rpx;
-  height: 30rpx;
-  line-height: 30rpx;
-  color: gray;
-  font-size: 11px;
-  background-color: #f2f5f8;
+.items-cover {
+    width: 170rpx;
+    height: 250rpx;
+    margin-left: 15rpx;
+    border-radius: 3px;
 }
+/* 横向推荐商品 end */
 
-.price-border{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  border-left: solid 1px;
-  border-bottom: solid 1px;
-  border-right: solid 1px;
-  border-color: #f2f5f8;
+/* 商品上新列表 start */
+.new-item-list {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
-.price{
-  margin-left: 10rpx;
-  font-size: 11px;
-  color: #ff6699;
-  margin-bottom: 10rpx;
+.item-outter {
+    width: 350rpx;
+    margin-bottom: 10rpx;
+    padding: 6rpx 10rpx;
 }
-.like-counts{
-  font-size: 11px;
-  margin-right: 12rpx;
-  margin-bottom: 10rpx;
-  color: gray;
+.new-item-cover {
+    width: 350rpx;
+    height: 510rpx;
+    margin-right: 10rpx;
 }
+.item-border {
+    height: 110rpx;
 
-.like-counts .like-ico{
-  width: 18rpx;
-  height: 18rpx;
-  margin-left: 10rpx;
+    border-left: solid 1px;
+    border-right: solid 1px;
+    border-color: #f2f5f8;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
+.tags {
+    background-color: #f2f5f8;
+    font-size: 11px;
+
+    color: gray;
+    margin-top: 10rpx;
+    margin-left: 10rpx;
+
+    padding: 5rpx 10rpx;
+    height: 30rpx;
+}
+.price-border {
+    border-left: solid 1px;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    border-color: #f2f5f8;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.price {
+    margin-left: 10rpx;
+    font-size: 11px;
+    color: #ff6699;
+    margin-bottom: 10rpx;
+}
+.like-counts {
+    font-size: 11px;
+    margin-right: 12rpx;
+    margin-bottom: 10rpx;
+    color: gray;
+}
+.like-ico {
+    width: 18rpx;
+    height: 18rpx;
+    margin-left: 10rpx;
+}
+/* 商品上新列表 end */
+
+
+
+
+
+
+
+
+
+
+
+
